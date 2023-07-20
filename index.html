@@ -13,9 +13,9 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="./plugins.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./main.css" />
-    <link rel="stylesheet" href="./plugins.css" />
 
     <script
       src="https://kit.fontawesome.com/e216f95262.js"
@@ -28,6 +28,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
 
     <title>Deni Jewelry | Home</title>
@@ -147,13 +152,13 @@
                   ><i class="ion-android-close"></i
                 ></a>
               </div>
-              <div class="welcome_text">
-                <p>
-                  Free shipping on all domestic orders with coupon code
-                  <span>“Watches2018”</span>
-                </p>
+              <div class="d-flex justify-content-center mb-3">
+                <div class="logo">
+                  <a href="index.html"
+                    ><img src="./img/logo.png" alt="" width="50px"
+                  /></a>
+                </div>
               </div>
-
               <div class="top_right text-right">
                 <ul>
                   <li class="language">
@@ -185,12 +190,10 @@
               </div>
               <div class="home_contact">
                 <div class="contact_box">
-                  <label>Location</label>
-                  <p>Your address goes here.</p>
+                  <h5>Women</h5>
                 </div>
                 <div class="contact_box">
-                  <label>Call free</label>
-                  <p><a href="tel:0123456789">0123456789</a></p>
+                  <h5>Man</h5>
                 </div>
               </div>
               <div id="menu" class="text-left">
@@ -337,76 +340,18 @@
 
     <!--header area start-->
     <header class="header_area">
-      <!--header top start-->
-      <div class="header_top">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-7 col-md-12">
-              <div class="welcome_text">
-                <p>
-                  Free shipping on all domestic orders with coupon code
-                  <span>“Watches2018”</span>
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-5 col-md-12">
-              <div class="top_right text-right">
-                <ul>
-                  <li class="language">
-                    <a href="#"> English <i class="ion-chevron-down"></i></a>
-                    <ul class="dropdown_language">
-                      <li><a href="#"> French</a></li>
-                      <li><a href="#">Germany</a></li>
-                      <li><a href="#">Japanese</a></li>
-                    </ul>
-                  </li>
-                  <li class="currency">
-                    <a href="#">USD <i class="ion-chevron-down"></i></a>
-                    <ul class="dropdown_currency">
-                      <li><a href="#">EUR – Euro</a></li>
-                      <li><a href="#">GBP – British Pound</a></li>
-                      <li><a href="#">INR – India Rupee</a></li>
-                    </ul>
-                  </li>
-                  <li class="top_links">
-                    <a href="#">My Account <i class="ion-chevron-down"></i></a>
-                    <ul class="dropdown_links">
-                      <li><a href="checkout.html">Checkout </a></li>
-                      <li><a href="my-account.html">My Account </a></li>
-                      <li><a href="cart.html">Shopping Cart</a></li>
-                      <li><a href="wishlist.html">Wishlist</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--header top start-->
-
       <!--header middel start-->
       <div class="header_middel">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-5">
-              <div class="home_contact">
-                <div class="contact_box">
-                  <label>Location</label>
-                  <p>Your address goes here.</p>
-                </div>
-                <div class="contact_box">
-                  <label>Call free</label>
-                  <p><a href="tel:0123456789">0123456789</a></p>
-                </div>
-              </div>
-            </div>
+          <div class="row align-items-center position-relative">
             <div class="col-lg-2 col-md-3 col-4">
               <div class="logo">
-                <a href="index.html"><img src="./img/logo.png" alt="" /></a>
+                <a href="index.html"
+                  ><img src="./img/logo.png" alt="" width="50px"
+                /></a>
               </div>
             </div>
-            <div class="col-lg-5 col-md-7 col-6">
+            <div class="col-lg-10 col-md-7 col-6">
               <div class="middel_right">
                 <div class="search_btn">
                   <a href="#"><i class="ion-ios-search-strong"></i></a>
@@ -419,70 +364,50 @@
                     </form>
                   </div>
                 </div>
-                <div class="cart_link">
-                  <a href="#"
-                    ><i class="ion-android-cart"></i
-                    ><span class="cart_text_quantity"> $138.00</span>
-                    <i class="fa fa-angle-down"></i
-                  ></a>
+                <div class="cart_link me-4">
+                  <a href="#"><i class="ion-android-cart"></i></a>
                   <span class="cart_quantity">2</span>
-                  <!--mini cart-->
-                  <div class="mini_cart">
-                    <div class="cart_close">
-                      <div class="cart_text">
-                        <h3>cart</h3>
-                      </div>
-                      <div class="mini_cart_close">
-                        <a href="javascript:void(0)"
-                          ><i class="ion-android-close"></i
-                        ></a>
-                      </div>
-                    </div>
-                    <div class="cart_item">
-                      <div class="cart_img">
-                        <a href="#"
-                          ><img src="assets/img/s-product/product.jpg" alt=""
-                        /></a>
-                      </div>
-                      <div class="cart_info">
-                        <a href="#">Letraset animal</a>
-
-                        <span class="quantity">Qty: 1</span>
-                        <span class="price_cart">$60.00</span>
-                      </div>
-                      <div class="cart_remove">
-                        <a href="#"><i class="ion-android-close"></i></a>
-                      </div>
-                    </div>
-                    <div class="cart_item">
-                      <div class="cart_img">
-                        <a href="#"
-                          ><img src="assets/img/s-product/product2.jpg" alt=""
-                        /></a>
-                      </div>
-                      <div class="cart_info">
-                        <a href="#">Natural passages</a>
-                        <span class="quantity">Qty: 1</span>
-                        <span class="price_cart">$69.00</span>
-                      </div>
-                      <div class="cart_remove">
-                        <a href="#"><i class="ion-android-close"></i></a>
-                      </div>
-                    </div>
-                    <div class="cart_total">
-                      <span>Subtotal:</span>
-                      <span>138.00</span>
-                    </div>
-                    <div class="mini_cart_footer">
-                      <div class="cart_button view_cart">
-                        <a href="cart.html">View cart</a>
-                      </div>
-                      <div class="cart_button checkout">
-                        <a class="active" href="checkout.html">Checkout</a>
-                      </div>
-                    </div>
-                  </div>
-                  <!--mini cart end-->
+                </div>
+                <div class="top_right text-right">
+                  <ul>
+                    <li class="language">
+                      <a href="#"> English <i class="ion-chevron-down"></i></a>
+                      <ul class="dropdown_language">
+                        <li><a href="#"> French</a></li>
+                        <li><a href="#">Germany</a></li>
+                        <li><a href="#">Japanese</a></li>
+                      </ul>
+                    </li>
+                    <li class="currency">
+                      <a href="#">USD <i class="ion-chevron-down"></i></a>
+                      <ul class="dropdown_currency">
+                        <li><a href="#">EUR – Euro</a></li>
+                        <li><a href="#">GBP – British Pound</a></li>
+                        <li><a href="#">INR – India Rupee</a></li>
+                      </ul>
+                    </li>
+                    <li class="top_links">
+                      <a href="#"
+                        >My Account <i class="ion-chevron-down"></i
+                      ></a>
+                      <ul class="dropdown_links">
+                        <li><a href="checkout.html">Checkout </a></li>
+                        <li><a href="my-account.html">My Account </a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="position-absolute man-women">
+              <div class="row">
+                <div class="col-lg-6 sex women">
+                  <h5 class="">Women</h5>
+                </div>
+                <div class="col-lg-6 sex man">
+                  <h5 class="">Man</h5>
                 </div>
               </div>
             </div>
@@ -499,7 +424,7 @@
               <div class="main_menu_inner">
                 <div class="logo_sticky">
                   <a href="index.html"
-                    ><img src="assets/img/logo/logo.png" alt=""
+                    ><img src="./img/logo.png" alt="" width="40"
                   /></a>
                 </div>
                 <div class="main_menu">
@@ -639,8 +564,79 @@
     </header>
     <!--header area end-->
 
+    <section class="slider" id="desktop">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="position-relative"
+              style="
+                background: url('./img/banner_women1.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 90vh;
+              "
+            >
+              <div class="text-slider">
+                <img src="./img/logo_white.png" alt="" class="logo-slider" />
+                <p>Beautiful pieces <br />inspired by tradition</p>
+                <button class="btn-shop">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              background: url('./img/banner_women2.jpg');
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              height: 90vh;
+            "
+          >
+            <div class="text-slider2">
+              <p>Beautiful pieces <br />inspired by tradition</p>
+              <button class="btn-shop">SHOP NOW</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="position-relative"
+              style="
+                background: url('./img/banner_women3.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 90vh;
+              "
+            >
+              <div class="text-slider3">
+                <img src="./img/logo_white.png" alt="" class="logo-slider" />
+                <p>Find your unique style</p>
+                <button class="btn-shop">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section class="hero position-relative" id="mobile">
+      <img src="./img/banner_women1.jpg" alt="" class="banner" />
+      <div class="text-slider">
+        <img src="./img/logo_white.png" alt="" class="logo-mobile-slider" />
+        <p>Beautiful pieces <br />inspired by tradition</p>
+        <button class="btn-shop">SHOP NOW</button>
+      </div>
+    </section>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
     <!-- Modal Search -->
-    <div
+    <!-- <div
       class="modal fade"
       id="exampleModal"
       tabindex="-1"
@@ -690,7 +686,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -707,7 +703,22 @@
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
     <script src="./main.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // loop: true,
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // },
+      });
+    </script>
   </body>
 </html>
