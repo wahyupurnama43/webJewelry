@@ -3,6 +3,7 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  centeredslides: true,
   loop: true,
   autoplay: {
     delay: 2500,
