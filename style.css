@@ -280,13 +280,7 @@ button.btn-shop:hover {
 }
 
 .product_content h3::before {
-  background-image: linear-gradient(
-    to right,
-    transparent,
-    #ddd 30%,
-    85%,
-    transparent
-  ) !important;
+  background-image: linear-gradient(to right, transparent, #ddd 30%, 85%, transparent) !important;
 }
 
 .single_product {
@@ -617,9 +611,21 @@ a.more:hover {
 .item-checkout {
   border: 1px solid var(--man);
   padding: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 .item-checkout p {
   margin: 0 !important;
+}
+.item-checkout:hover {
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.05);
+}
+.modal-checkout .modal-body {
+  padding: 20px !important;
+}
+.modal-checkout .modal-body p {
+  margin: 0 !important;
+  margin-bottom: 5px !important;
 }
 @media (max-width: 1696px) {
   .text-slider3 {

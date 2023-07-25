@@ -7,9 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
@@ -41,105 +41,47 @@
               <div class="row g-3 mt-4">
                 <div class="col-lg-12 mb-3">
                   <label for="inputEmail4" class="form-label">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="inputEmail4"
-                    placeholder="Email Address *"
-                  />
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email Address *" />
                 </div>
 
                 <hr class="mt-3" />
-                <div class="col-lg-12">
-                  <label for="phone" class="form-label">Phone</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="phone"
-                    placeholder="Phone *"
-                  />
-                </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                   <label for="firstName" class="form-label">First Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="firstName"
-                    name="firstName"
-                    placeholder="First Name *"
-                  />
+                  <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name *" />
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                   <label for="lastName" class="form-label">Last Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="lastName"
-                    name="lastName"
-                    placeholder="Last Name *"
-                  />
+                  <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name *" />
+                </div>
+                <div class="col-lg-12">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="text" class="form-control" id="phone" placeholder="Phone *" />
                 </div>
                 <div class="col-lg-12">
                   <label for="inputAddress" class="form-label">Address</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inputAddress"
-                    placeholder="1234 Main St *"
-                  />
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St *" />
                 </div>
                 <div class="col-lg-12">
-                  <label for="inputAddress2" class="form-label"
-                    >Address 2 (optional)</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inputAddress2"
-                    placeholder="Apartment, studio, or floor"
-                  />
+                  <label for="inputAddress2" class="form-label">Address 2 (optional)</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                   <label for="country" class="form-label">Country</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="country"
-                    name="country"
-                    placeholder="Country"
-                  />
+                  <input type="text" class="form-control" id="country" name="country" placeholder="Country" />
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                   <label for="provice" class="form-label">State/Provice</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="provice"
-                    name="provice"
-                    placeholder="State/Provice"
-                  />
+                  <input type="text" class="form-control" id="provice" name="provice" placeholder="State/Provice" />
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12">
                   <label for="city" class="form-label">City</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="city"
-                    name="city"
-                    placeholder="City"
-                  />
+                  <input type="text" class="form-control" id="city" name="city" placeholder="City" />
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12">
                   <label for="zip" class="form-label">Zip</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="zip"
-                    name="zip"
-                    placeholder="Zip *"
-                  />
+                  <input type="text" class="form-control" id="zip" name="zip" placeholder="Zip *" />
                 </div>
               </div>
             </div>
@@ -175,7 +117,7 @@
             <div class="card-body">
               <h2>Order Summary</h2>
               <hr />
-              <div class="d-flex gap-3 item-checkout mb-3">
+              <div class="d-flex gap-3 item-checkout mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
                   alt="Test image for items"
@@ -183,9 +125,7 @@
                   style="height: 78px; width: 78px"
                 />
                 <div class="d-flex flex-column w-100">
-                  <h5 id="label-code-{{ $key }}" class="title-produk">
-                    Donec Eu Furniture
-                  </h5>
+                  <h5 id="label-code-{{ $key }}" class="title-produk">Donec Eu Furniture</h5>
                   <div class="d-flex justify-content-between">
                     <p>Size : 9.5</p>
                     <p>Qty : 5</p>
@@ -197,7 +137,7 @@
                 </div>
               </div>
 
-              <div class="d-flex gap-3 item-checkout mb-3">
+              <div class="d-flex gap-3 item-checkout mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
                   alt="Test image for items"
@@ -205,9 +145,7 @@
                   style="height: 78px; width: 78px"
                 />
                 <div class="d-flex flex-column w-100">
-                  <h5 id="label-code-{{ $key }}" class="title-produk">
-                    Donec Eu Furniture
-                  </h5>
+                  <h5 id="label-code-{{ $key }}" class="title-produk">Donec Eu Furniture</h5>
                   <div class="d-flex justify-content-between">
                     <p>Size : 9.5</p>
                     <p>Qty : 5</p>
@@ -219,7 +157,7 @@
                 </div>
               </div>
 
-              <div class="d-flex gap-3 item-checkout mb-3">
+              <div class="d-flex gap-3 item-checkout mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
                   alt="Test image for items"
@@ -227,9 +165,7 @@
                   style="height: 78px; width: 78px"
                 />
                 <div class="d-flex flex-column w-100">
-                  <h5 id="label-code-{{ $key }}" class="title-produk">
-                    Donec Eu Furniture
-                  </h5>
+                  <h5 id="label-code-{{ $key }}" class="title-produk">Donec Eu Furniture</h5>
                   <div class="d-flex justify-content-between">
                     <p>Size : 9.5</p>
                     <p>Qty : 5</p>
@@ -249,7 +185,56 @@
               <h2>Final Checkout</h2>
 
               <hr />
-              <div class="d-flex flex-column w-100"></div>
+              <div class="d-flex flex-column w-100">
+                <div class="d-flex justify-content-between mb-2">
+                  <h5>Total Qty:</h5>
+                  <h5><strong>5 Pcs</strong></h5>
+                </div>
+
+                <div class="d-flex justify-content-between mb-2">
+                  <h5>Total Weight:</h5>
+                  <h5><strong>44 G</strong></h5>
+                </div>
+
+                <div class="d-flex justify-content-between mb-2">
+                  <h5>Sub Total Price:</h5>
+                  <h5><strong>$ 500</strong></h5>
+                </div>
+
+                <button class="btn btn-primary">Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade modal-checkout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Order Item</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
+                alt="Test image for items"
+                class="img-fluid rounded"
+                style="height: 100%; width: 100%; object-fit: cover"
+              />
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <h5><strong>Item Name</strong></h5>
+              <p>Silver bracelet, scale dragon chain round 6mm...</p>
+              <p>Price : <strong>$342.50</strong></p>
+              <p>Size : <strong>3.5</strong></p>
+              <p>Qty : <strong>2</strong></p>
+              <p>Weight : <strong>45 g</strong></p>
+              <p>Total Weight : <strong>342.50</strong></p>
+              <p>Total Price : <strong>$ 5000</strong></p>
             </div>
           </div>
         </div>
@@ -257,8 +242,8 @@
     </div>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
 
