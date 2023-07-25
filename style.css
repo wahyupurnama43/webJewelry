@@ -627,6 +627,41 @@ a.more:hover {
   margin: 0 !important;
   margin-bottom: 5px !important;
 }
+
+.dashboard_tab_button ul li a {
+  background: #fff !important;
+  border-bottom: 1px solid var(--man);
+}
+
+.dashboard_tab_button ul li a.active {
+  background-color: var(--browns) !important;
+  color: #fff !important;
+}
+
+.customer_login {
+  margin: 0 auto !important;
+}
+
+.customer_login .account_form form {
+  border: 1px solid #ebebeb;
+  padding: 23px 20px 29px;
+  border-radius: 5px;
+}
+
+.customer_login .account_form input {
+  border: 1px solid #ebebeb;
+  height: 40px;
+  max-width: 100%;
+  padding: 0 20px;
+  background: none;
+  width: 100%;
+}
+
+.login_submit button {
+  background: var(--browns) !important;
+  color: #fff !important;
+}
+
 @media (max-width: 1696px) {
   .text-slider3 {
     position: absolute;
@@ -803,6 +838,9 @@ a.more:hover {
 }
 
 @media (max-width: 768px) {
+  .customer_login .w-50 {
+    width: 100% !important;
+  }
   .product_variant .quantity {
     flex-wrap: wrap;
   }
