@@ -1,8 +1,8 @@
 :root {
-  --browns: #a59478;
+  --pink: #a59478;
   --pink: #f9f5f6;
   --gray: #f5f5f5;
-  --man: #dde6ed;
+  --man: #525252;
 }
 
 * {
@@ -90,8 +90,18 @@
 .sex.women {
   background: #fff;
 }
-.sex.man {
-  background: #dde6ed;
+#women .sex.man {
+  background: #525252;
+}
+#women .sex.man h5 {
+  color: #fff !important;
+}
+
+#man .sex.women {
+  background: #faf4f6;
+}
+#man .sex.man {
+  background: #fff;
 }
 
 .swiper {
@@ -499,13 +509,13 @@ button.btn-shop:hover {
   gap: 20px !important;
 }
 .product_variant.quantity button {
-  background: var(--browns) !important;
+  background: var(--pink) !important;
   font-weight: 600 !important;
   transition: all 0.5s ease-in-out;
 }
 .product_variant.quantity button:hover,
 .btn-primary:hover {
-  background: var(--browns) !important;
+  background: var(--pink) !important;
   color: #fff !important;
   box-shadow: 0px 0 15px 0 rgba(0, 0, 0, 0.1) !important;
   transform: scale(1.1);
@@ -520,6 +530,7 @@ button.btn-shop:hover {
   margin: 0 auto;
   width: 90%;
   height: auto;
+  border-radius: 15px;
 }
 
 #searchModal .modal-body {
@@ -549,7 +560,7 @@ button.btn-shop:hover {
 .btn-primary {
   border: 0 !important;
   font-size: 16px !important;
-  background: var(--browns) !important;
+  background: var(--pink) !important;
   text-transform: capitalize !important;
   transition: all 0.5s ease-in-out;
   color: #fff !important;
@@ -602,7 +613,7 @@ button.btn-shop:hover {
 }
 
 .dashboard_tab_button ul li a.active {
-  background-color: var(--browns) !important;
+  background-color: var(--pink) !important;
   color: #fff !important;
 }
 
@@ -626,7 +637,7 @@ button.btn-shop:hover {
 }
 
 .login_submit button {
-  background: var(--browns) !important;
+  background: var(--pink) !important;
   color: #fff !important;
 }
 .text-item-category {
@@ -669,6 +680,10 @@ button.btn-shop:hover {
   padding: 30px 0;
   border-radius: 10px;
   background: linear-gradient(304deg, rgba(82, 82, 82, 0.2) 14.59%, rgba(255, 226, 226, 0.06) 100%) !important;
+}
+
+.text-dark {
+  color: var(--man) !important;
 }
 @media (max-width: 1696px) {
   .text-slider3 {

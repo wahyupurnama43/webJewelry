@@ -42,6 +42,7 @@
 :root {
   --pink: #f9f5f6;
   --gray: #f5f5f5;
+  --man: #525252;
 }
 
 /* transition */
@@ -533,11 +534,7 @@ textarea:-ms-input-placeholder {
 .offcanvas_main_menu > li.menu-item-has-children.menu-open > span.menu-expand {
   transform: rotate(180deg);
 }
-.offcanvas_main_menu
-  > li
-  ul
-  li.menu-item-has-children.menu-open
-  span.menu-expand {
+.offcanvas_main_menu > li ul li.menu-item-has-children.menu-open span.menu-expand {
   transform: rotate(180deg);
 }
 
@@ -1170,7 +1167,7 @@ textarea:-ms-input-placeholder {
 
 .header_middel {
   padding: 40px 0;
-  background: #f9f5f6;
+  background: var(--pink);
   border-bottom: 1px solid #f5f5f5;
   padding-bottom: 74px;
 }
@@ -3001,16 +2998,7 @@ textarea:-ms-input-placeholder {
 .sidebar_black_version .main_menu nav > ul > li ul.mega_menu > li ul li a {
   color: #ffffff;
 }
-.sidebar_black_version
-  .main_menu
-  nav
-  > ul
-  > li
-  ul.mega_menu
-  > li
-  ul
-  li
-  a:hover {
+.sidebar_black_version .main_menu nav > ul > li ul.mega_menu > li ul li a:hover {
   color: #a8741a;
 }
 .sidebar_black_version .main_menu nav > ul > li:hover > a {
@@ -3665,23 +3653,13 @@ textarea:-ms-input-placeholder {
   color: #c09578;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .categories_menu_toggle
-    > ul
-    > li
-    ul.categories_mega_menu
-    > li.menu_item_children
-    > a {
+  .categories_menu_toggle > ul > li ul.categories_mega_menu > li.menu_item_children > a {
     text-transform: capitalize;
     font-weight: 400;
   }
 }
 @media only screen and (max-width: 767px) {
-  .categories_menu_toggle
-    > ul
-    > li
-    ul.categories_mega_menu
-    > li.menu_item_children
-    > a {
+  .categories_menu_toggle > ul > li ul.categories_mega_menu > li.menu_item_children > a {
     text-transform: capitalize;
     font-weight: 400;
   }
@@ -3945,13 +3923,7 @@ textarea:-ms-input-placeholder {
 .categories_ten .categories_menu_toggle > ul > li:hover > a {
   color: #a8741a;
 }
-.categories_ten
-  .categories_menu_toggle
-  > ul
-  > li
-  ul.categories_mega_menu
-  > li
-  > a:hover {
+.categories_ten .categories_menu_toggle > ul > li ul.categories_mega_menu > li > a:hover {
   color: #a8741a;
 }
 .categories_ten .categorie_sub_menu li a:hover {
@@ -5381,13 +5353,7 @@ textarea:-ms-input-placeholder {
   margin-bottom: 13px;
 }
 .product_content h3::before {
-  background-image: linear-gradient(
-    to right,
-    transparent,
-    #fff 30%,
-    85%,
-    transparent
-  );
+  background-image: linear-gradient(to right, transparent, #fff 30%, 85%, transparent);
   content: "";
   display: block;
   height: 1px;
@@ -5498,13 +5464,7 @@ textarea:-ms-input-placeholder {
   padding-bottom: 14px;
 }
 .product_desc::before {
-  background-image: linear-gradient(
-    to right,
-    transparent,
-    #fff 30%,
-    85%,
-    transparent
-  );
+  background-image: linear-gradient(to right, transparent, #fff 30%, 85%, transparent);
   content: "";
   display: block;
   height: 1px;
@@ -5727,13 +5687,7 @@ textarea:-ms-input-placeholder {
   font-size: 16px;
 }
 .product_black_section .product_content h3::before {
-  background-image: linear-gradient(
-    to right,
-    transparent,
-    #2d2d2d 30%,
-    85%,
-    transparent
-  );
+  background-image: linear-gradient(to right, transparent, #2d2d2d 30%, 85%, transparent);
 }
 .product_black_section .product_content h3 a {
   color: #ffffff;
@@ -5751,13 +5705,7 @@ textarea:-ms-input-placeholder {
   color: #a8741a;
 }
 .product_black_section .product_desc::before {
-  background-image: linear-gradient(
-    to right,
-    transparent,
-    #2d2d2d 30%,
-    85%,
-    transparent
-  );
+  background-image: linear-gradient(to right, transparent, #2d2d2d 30%, 85%, transparent);
 }
 .product_black_section .action_links ul li a {
   background: #2e2e2e;
@@ -9207,7 +9155,7 @@ textarea:-ms-input-placeholder {
 .account_form button {
   background: #c09578;
   border: 0;
-  color: #ffffff;
+  color: var(--man) !important;
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -11966,5 +11914,3 @@ textarea:-ms-input-placeholder {
   text-transform: capitalize;
   color: #ffffff;
 }
-
-/*# sourceMappingURL=style.css.map */
